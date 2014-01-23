@@ -1,0 +1,15 @@
+---
+layout: default
+title: 龙昌的个人作品
+---
+
+<div>
+  <div class="post_list">
+    {% for post in site.posts %}
+    <div class="post_item">
+      <span class="post_title"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></span>
+      <span class="post_date">{{ post.date | date_to_string }}</span>
+    </div>
+    {% endfor %}
+  </div>
+</div>

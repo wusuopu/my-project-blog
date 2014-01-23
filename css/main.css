@@ -1,0 +1,134 @@
+/*****************************************************************************/
+/*
+/* Common
+/*
+/*****************************************************************************/
+
+html {
+  background: #F1F1F1;
+}
+
+body {
+  background: #FFFFFF;
+  margin: 15px auto !important;
+  padding: 15px;
+  width: 890px;
+}
+.meta {
+  color: #aaa;
+}
+
+/* custom */
+#header {
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid #808080;
+}
+#header a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#footer {
+  text-align: center;
+  /*background: #F5F5F5;*/
+  height: 50px;
+  line-height: 50px;
+  border-top: 1px solid #808080;
+}
+#footer > img {
+  max-height: 50px;
+}
+
+#content {
+  width: 890px;
+  position: relative;
+  margin: 15px 0 15px 0;
+}
+#left {
+  display: inline-block;
+  width: 220px;
+}
+#right {
+  width: 620px;
+  float: right;
+  margin: 0 15px 0 0;
+}
+
+ul.link {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ol.posts {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+}
+
+ol.posts > li {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 190px;
+}
+
+div.post_item {
+  height: 35px;
+  line-height: 35px;
+  border-bottom: 1px dotted;
+}
+
+span.post_title {
+  float: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 490px;
+}
+span.post_date {
+  float: right;
+}
+
+div.post_content img {
+  max-width: 540px;
+}
+/*****************************************************************************/
+/*
+/* Posts
+/*
+/*****************************************************************************/
+
+/* standard */
+.post pre {
+  border: 1px solid #ddd;
+  background-color: #eef;
+  padding: 0 .4em;
+}
+
+.post ul, .post ol {
+  margin-left: 1.35em;
+}
+
+.post code {
+  border: 1px solid #ddd;
+  background-color: #eef;
+  padding: 0 .2em;
+}
+
+.post pre code {
+  border: none;
+}
+
+/* terminal */
+.post pre.terminal {
+  border: 1px solid #000;
+  background-color: #333;
+  color: #FFF;
+}
+
+.post pre.terminal code {
+  background-color: #333;
+}
