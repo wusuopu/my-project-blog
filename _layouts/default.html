@@ -23,7 +23,7 @@
             <div class="panel-heading">最新内容</div>
             <div class="panel-body">
               <ol class="posts">
-                {% for post in site.posts %}
+                {% for post in site.posts limit:5 %}
                   <li><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
                 {% endfor %}
               </ol>
@@ -36,9 +36,9 @@
             </div>
             <div class="panel-body">
               <ul class="link">
-                <li><a href="http://www.xefan.com/" alt="龍昌博客">龍昌博客</a></li>
-                <li><a href="https://github.com/wusuopu" alt="我的Github">我的Github</a></li>
-                <li><a href="http://www.weibo.com/longchangjin" alt="我的微博">我的微博</a></li>
+                <li><a target="_blank" href="http://www.xefan.com/" alt="龍昌博客">龍昌博客</a></li>
+                <li><a target="_blank" href="https://github.com/wusuopu" alt="我的Github">我的Github</a></li>
+                <li><a target="_blank" href="http://www.weibo.com/longchangjin" alt="我的微博">我的微博</a></li>
               </ul>
             </div>
           </div>
